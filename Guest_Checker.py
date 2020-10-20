@@ -1,11 +1,14 @@
-#searches a given link for Galaxy artists
+#searches a given link for artists that you specify in the names list.
 
 import requests
 
 try:
     def search():
+        # user will input a URL for a convention's guests page or artist page or wherever they have their 
+        # attendees listed.
         Site = input(
             [r'Please enter the site you would like to search i.e. https://iccollectorsconvention.com/artists/'])
+        # This is where you list which guests you are looking for.
         names = ['MARK MCCREERY', 'AARON MCBRIDE', 'ADAM HUGHES', 'ADAM PORT', 'ADAM SCHICKLING', 'ADAM WARREN',
                  'AL WILLIAMSON', 'ALEC GUINESS', 'ALEX GARNER', 'ALEX INIGUEZ', 'ALEX PARDEE', 'ALLEN NUNIS',
                  'ALLISON SOHN', 'AMANDA CONNER', 'AMY BETH CHRISTENSON', 'AMY PRONOVOST', 'ANDREW FRY',
